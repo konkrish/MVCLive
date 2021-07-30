@@ -11,7 +11,13 @@ namespace MVCLive
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");//Blocking 
+
+            routes.MapRoute(
+                name: "CustomRoute",
+                url: "{controller}/{Name}",//controller
+                defaults: new { controller = "CustomRoute", action = "GetUserSecData", id = UrlParameter.Optional }
+                );
 
             routes.MapRoute(
                 name: "Default",
