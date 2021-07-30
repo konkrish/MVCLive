@@ -14,16 +14,16 @@ namespace MVCLive
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");//Blocking 
 
             routes.MapRoute(
+              name: "Default",
+              url: "{controller}/{action}/{id}",
+              defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+          );
+
+            routes.MapRoute(
                 name: "CustomRoute",
                 url: "{controller}/{Name}",//controller
                 defaults: new { controller = "CustomRoute", action = "GetUserSecData", id = UrlParameter.Optional }
                 );
-
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
 
             routes.MapRoute(
                 name: "Person",

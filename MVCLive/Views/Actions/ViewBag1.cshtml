@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "ViewBag1";
+}
+<h2>ViewBag1</h2>
+
+<h3>@ViewBag.Message</h3>
+
+
+<ul>
+    @foreach (var student in ViewBag.Student)
+    {
+        <li>@student</li>
+    }
+</ul>
+
