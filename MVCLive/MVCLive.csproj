@@ -122,7 +122,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ActionsController.cs" />
     <Compile Include="Controllers\CustomRouteController.cs" />
+    <Compile Include="Controllers\FiltersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MyLogActionFilter.cs" />
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -170,6 +172,7 @@
     <Content Include="Views\Actions\Index.cshtml" />
     <Content Include="Views\Actions\ViewData1.cshtml" />
     <Content Include="Views\Actions\TempData1.cshtml" />
+    <Content Include="Views\Filters\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
