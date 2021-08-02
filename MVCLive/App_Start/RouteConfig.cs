@@ -19,17 +19,17 @@ namespace MVCLive
               defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
           );
 
-            routes.MapRoute(
-                name: "CustomRoute",
-                url: "{controller}/{Name}",//controller
-                defaults: new { controller = "CustomRoute", action = "GetUserSecData", id = UrlParameter.Optional }
-                );
+            //routes.MapRoute(
+            //    name: "CustomRoute",
+            //    url: "{controller}/{Name}",//controller
+            //    defaults: new { controller = "CustomRoute", action = "GetUserSecData", id = UrlParameter.Optional }
+            //    );
 
-            routes.MapRoute(
-                name: "Person",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Person", action = "Index", id = UrlParameter.Optional }
-            );
+            //routes.MapRoute(
+            //    name: "Person",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Person", action = "Index", id = UrlParameter.Optional }
+            //);
         }
     }
 }
